@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: #343f56;
+  color: #f5e6ca;
+}
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+h1,
+p {
+  padding: 1rem 0rem;
+}
+.container {
+  max-width: 600px;
+  margin: auto;
+  padding: 1rem;
+}
+.topics {
+  list-style: none;
+  margin: 2rem 0rem;
+}
+.topics li {
+  display: inline;
+  padding: 0.35rem 1.5rem;
+  border: 2px dashed #f54748;
+  border-radius: 1rem;
+  margin: 0 0.5rem;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+.topics li.active {
+  background: red;
+}
+
+.resourceList {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+  border: 1px solid #fb9300;
+  width: 70%;
+  padding: 0.5rem 1rem;
+  margin: 1rem auto;
+  border-radius: 1rem;
+  text-align: left;
+  background: #f5e6ca;
+}
+.resourceList img {
+  width: 50px;
+  border-radius: 50%;
+}
+.resourceList a {
+  display: block;
+  font-size: larger;
+  text-decoration: none;
+  padding: 0.25rem 0;
+  color: #f54748;
+}
+.resourceList span {
+  color: #343f56;
+  font-size: smaller;
+}
+@media (max-width: 769px) {
+  .resourceList {
+    width: 100%;
+  }
+}
